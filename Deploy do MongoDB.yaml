@@ -86,3 +86,7 @@ spec:
   - nodePort: 30920
     port: 80
     targetPort: 5000
+
+    - task: KubectlInstaller@0
+      inputs:
+        kubectlVersion: 'latest'
